@@ -13,5 +13,13 @@ namespace tests
             Assert.NotNull(cntrl);
 
         }
+
+         [Fact]
+        public void Test2()
+        {
+            var cntrl = new ValuesController();
+            Assert.True(1 == 1);
+
+        }
     }
 }
