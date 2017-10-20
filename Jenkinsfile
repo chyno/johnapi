@@ -1,9 +1,9 @@
 pipeline {
   agent any
   stages {
-    stage('') {
+    stage('Get Code') {
       steps {
-        git(url: 'https://github.com/chyno/johnapi.git', poll: true, changelog: true, branch: 'master')
+        git(url: 'https://github.com/chyno/johnapi.git', poll: true, changelog: true, branch: 'master', credentialsId: 'github')
       }
     }
   }
