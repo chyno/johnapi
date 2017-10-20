@@ -11,10 +11,5 @@ pipeline {
         git(url: 'https://github.com/chyno/johnapi.git', poll: true, changelog: true, branch: 'master', credentialsId: 'github')
       }
     }
-    stage('error') {
-      steps {
-        sh 'docker build .'
-      }
-    }
   }
 }
