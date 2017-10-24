@@ -11,9 +11,9 @@ pipeline {
         git(url: 'https://github.com/chyno/johnapi.git', poll: true, changelog: true, branch: 'master', credentialsId: 'github')
       }
     }
-    stage('') {
+    stage('print message') {
       steps {
-        echo 'About to run tests'
+        echo 'Hello from build'
       }
     }
   }
