@@ -6,10 +6,9 @@ pipeline {
     
   }
   stages {
-    stage('Get Code') {
+    stage('test') {
       steps {
-        git(url: 'https://github.com/chyno/johnapi.git', poll: true, changelog: true, branch: 'master', credentialsId: 'github')
-        echo '"Hello World"'
+        echo 'Hell World'
       }
     }
   }
