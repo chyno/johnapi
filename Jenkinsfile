@@ -1,19 +1,14 @@
 pipeline {
   agent {
     dockerfile {
-      filename 'Dockerfile'
+      filename 'dockerfile'
     }
     
   }
   stages {
-    stage('Get Code') {
+    stage('test') {
       steps {
-        git(url: 'https://github.com/chyno/johnapi.git', poll: true, changelog: true, branch: 'master', credentialsId: 'github')
-      }
-    }
-    stage('') {
-      steps {
-        sh 'dotnet test tests/tests.csproj'
+        echo 'Hell World'
       }
     }
   }
