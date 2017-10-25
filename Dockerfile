@@ -16,7 +16,7 @@ RUN ls -alR
 copy . .
 
 # test
-#RUN dotnet test tests/tests.csproj
+RUN dotnet test tests/tests.csproj
 
 # publish
 # RUN dotnet publish johnapi/johnapi.csproj -o /publish
