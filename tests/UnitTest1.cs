@@ -4,6 +4,7 @@ using johnapi.Controllers;
 
 namespace tests
 {
+//Unit tests
     public class UnitTest1
     {
         [Fact]
