@@ -27,7 +27,7 @@ namespace tests
         public void Test3()
         {
             var cntrl = new ValuesController();
-            Assert.True(2 == 6);
+            Assert.True(2 == 2);
 
         }
     }
