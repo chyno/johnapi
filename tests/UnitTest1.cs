@@ -21,5 +21,13 @@ namespace tests
             Assert.True(1 == 1);
 
         }
+
+         [Fact]
+        public void Test3()
+        {
+            var cntrl = new ValuesController();
+            Assert.True(2 == 2);
+
+        }
     }
 }
