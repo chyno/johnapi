@@ -19,10 +19,10 @@ copy . .
 RUN dotnet test tests/tests.csproj
 
 # publish
-# RUN dotnet publish johnapi/johnapi.csproj -o /publish
+ RUN dotnet publish johnapi/johnapi.csproj -o /publish
 
 # Runtime stage
-#FROM microsoft/aspnetcore:2
-#COPY --from=build-env /publish /publish
-#WORKDIR /publish
-#ENTRYPOINT ["dotnet", "johnapi.dll"]
+FROM microsoft/aspnetcore:2
+COPY --from=build-env /publish /publish
+WORKDIR /publish
+ENTRYPOINT ["dotnet", "johnapi.dll"]
