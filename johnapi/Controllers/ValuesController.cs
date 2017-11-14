@@ -13,7 +13,7 @@ namespace johnapi.Controllers
         [HttpGet]
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2", "value3" };
+            return new string[] { "value1", "value2", "value3", "foo", "bar" };
         }
 
         // GET api/values/5
